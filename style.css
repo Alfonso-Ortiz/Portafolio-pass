@@ -43,8 +43,10 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
 }
 
-.container .content_header .icon {
-  display: none;
+@media (min-width: 801px) {
+  .container .content_header .icon-menu {
+    display: none;
+  }
 }
 
 .container .content_header .navbar {
@@ -383,9 +385,19 @@ footer p {
 }
 
 @media (max-width: 800px) {
-  .icon {
-    align-self: flex-end;
+  .icon-menu {
     font-size: 2rem;
+    display: flex;
+    height: 5rem;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  .navbar-show {
+    transform: translateX(0);
   }
 
   body {
