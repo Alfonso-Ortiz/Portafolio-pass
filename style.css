@@ -22,7 +22,7 @@ html {
 body {
   font-size: 18px;
   font-family: "Rubik";
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -41,6 +41,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  /* position: fixed; */
 }
 
 .container .content_header .navbar a {
@@ -66,6 +68,7 @@ body::-webkit-scrollbar-thumb {
 
 .container .content_main {
   display: flex;
+  /* padding-top: 100px; */
 }
 
 .container .content_main .fondo {
@@ -107,6 +110,13 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 30px;
 }
 
+.container .content_main .main .icons a {
+  background-color: #ffffff;
+  padding: 0;
+  width: 30px;
+  border-radius: 90%;
+  border-color: #111414;
+}
 .container .content_main .main .icons a img {
   height: 24px;
 }
@@ -196,7 +206,8 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1100px;
+  width: 950px;
+  text-align: justify;
 }
 
 .container .content_acerca_de_mi .text p {
@@ -361,5 +372,216 @@ footer p {
   margin-top: 10rem;
 }
 
-@media (min-height: 600px) {
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .content_header .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+
+  .container .content_header .navbar a {
+    display: none;
+  }
+
+  .container .content_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .container .content_main .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .content_main .fondo {
+    height: 785px;
+    width: 510px;
+    padding-left: 1.5rem;
+    padding-right: 5rem;
+    position: absolute;
+    left: 0%;
+  }
+
+  .container .content_main .main h3 {
+    font-size: 32px;
+  }
+
+  .container .content_main .main h2 {
+    font-size: 60px;
+  }
+
+  .container .content_main .main button {
+    height: 40px;
+    width: 230px;
+    margin-bottom: 150px;
+  }
+
+  .container .sub-title {
+    font-size: 32px;
+    align-items: center;
+  }
+
+  .container .content_habilidades .caja_habilidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+
+  .container .content_acerca_de_mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container .content_acerca_de_mi .text {
+    width: 510px;
+    text-align: justify;
+    left: 0;
+  }
+
+  .container .content_acerca_de_mi .content_estudios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .content_servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .content_portafolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .content_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+/* @media screen and (max-width: 800px) {
+  .redes {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  nav.resposive {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+
+  .icon-nav {
+    display: block;
+  }
+
+  .home .contenido .presentation h2 {
+    font-size: 48px;
+  }
+
+  .aboutme {
+    padding: 50px 0;
+    display: block;
+  }
+
+  .aboutme .content-photo {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .aboutme .content-photo img {
+    padding: 8px;
+  }
+
+  .aboutme .about-me .title-about-me {
+    text-align: center;
+  }
+
+  .aboutme .about-me h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .services {
+    padding: 50px 15px;
+  }
+
+  .services .fila {
+    display: block;
+  }
+
+  .services .fila .service {
+    margin: 10px auto;
+  }
+
+  .content-skills {
+    padding: 50px 20px;
+  }
+
+  .portfolio {
+    padding: 50px 0;
+  }
+
+  .portfolio .fila-portfolio {
+    display: block;
+  }
+
+  .portfolio .fila-portfolio .proyect {
+    margin: 10px auto;
+  }
+
+  .contact {
+    padding: 50px 15px;
+  }
+
+  .contact .content-form .mitad {
+    margin: 15px;
+    display: block;
+  }
+
+  .contact .content-form .mitad input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+} */
