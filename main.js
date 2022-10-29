@@ -1,6 +1,6 @@
-const iconMenu = document.querySelector(".icon_menu");
+const iconMenu = document.querySelector(".icon-menu");
 const menu = document.querySelector(".navbar");
 
 iconMenu.addEventListener("click", function () {
-  menu.classList.toggle("navbar-show");
+  console.log(menu.classList.toggle("navbar-show"));
 });
