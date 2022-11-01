@@ -13,7 +13,7 @@
       <section id="content-header" class="content_header">
         
         <img src="./src/Vectores/Decor 1.svg" alt=""/>
-        <nav class="navbar">
+        <nav class="navbar" id="menu">
           <a href="#content-header">Home</a>
           <a href="#content_servicios">Servicios</a>
           <a href="#content_acerca_de_mi">Acerca de mí</a>
@@ -21,7 +21,7 @@
           <a href="#portafolio">Mi portafolio</a>
           <a href="#contacto">Contacto</a>
         </nav>
-        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform:msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>      </section>
+        <svg class="icon-menu" id="icono-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform:msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>      </section>
 
       <!-- MAIN -->
 
@@ -30,7 +30,8 @@
         <img class="me" src="./src/img/Me.png" alt="" />
         <div class="main">
           <h3>Hola, soy Alfonso</h3>
-          <h2>Web Developer</h2>
+          <h2 class="dev1">Web Developer</h2>
+          <h2 class="dev2">UX/UI <br> Designer</h2>
           <div class="icons">
             <a href="https://www.linkedin.com" target="_blank"
               ><img src="./src/Íconos/cib_linkedin-in.svg" alt="" 
@@ -49,6 +50,8 @@
       <!-- HABILIDADES -->
       <h2 id="content_habilidades" class="sub-title">HABILIDADES</h2>
       <section  class="content_habilidades">
+        <img id="rowLeftH" class="flechas" src="./src/Íconos/arrow-left.svg" alt="">
+        
         <div class="caja_habilidad">
           <div>
             <p>95%</p>
@@ -76,6 +79,7 @@
           </div>
           <h4>Desing systems</h4>
         </div>
+        <img id="rowRightH" class="flechas" src="./src/Íconos/arrow-right.svg" alt="">
       </section>
 
       <!-- ACERCA DE MI -->
@@ -149,6 +153,8 @@
 
       <h2 id="portafolio" class="sub-title">PORTAFOLIO</h2>
       <section  class="content_portafolio">
+        <img id="rowLeftP" class="flechas" src="./src/Íconos/arrow-left.svg" alt="">
+
         <div class="box">
           <img src="./src/Logos-Imágenes/image 9-1.png" alt="" />
           <p>Beauty app</p>
@@ -168,6 +174,8 @@
           <img src="./src/Logos-Imágenes/image 11.png" alt="" />
           <p>Management web</p>
         </div>
+
+        <img id="rowRightP" class="flechas" src="./src/Íconos/arrow-right.svg" alt="">
       </section>
 
       <!-- CONTACTO -->
