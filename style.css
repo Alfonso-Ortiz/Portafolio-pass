@@ -319,20 +319,49 @@ body::-webkit-scrollbar-thumb {
 /* CONTENT PORTAFOLIO */
 
 .container .content_portafolio {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 4rem;
+  display: none;
 }
 
-.container .content_portafolio .flechas {
+.container .box_desktop {
+  display: flex;
+}
+
+.container .box_desktop .box {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-left: 3.1rem;
+  max-width: 100%;
+}
+
+.container .box_desktop .box:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 26px -2px rgba(0, 0, 0, 1);
+  transition: 0.5s;
+}
+
+.container .box_desktop img {
+  display: block;
+  height: 163px;
+  width: 100%;
+}
+
+.container .box_desktop p {
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container .content_portafolio .swiper-wraper {
   display: none;
 }
 
 .container .content_portafolio .box {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   margin-left: 3.1rem;
+  max-width: 200px;
 }
 
 .container .content_portafolio .box:hover {
@@ -342,7 +371,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container .content_portafolio img {
+  display: block;
   height: 163px;
+  width: 100%;
 }
 
 .container .content_portafolio p {
@@ -534,7 +565,7 @@ footer p {
     display: block;
   }
 
-  .container .content_habilidades .flechas {
+  /* .container .content_habilidades .flechas {
     display: flex;
     color: white;
     background-color: #ff4f6f;
@@ -545,7 +576,7 @@ footer p {
     cursor: pointer;
     align-self: center;
     right: 2%;
-  }
+  } */
 
   .container .content_acerca_de_mi {
     display: flex;
@@ -577,11 +608,19 @@ footer p {
     margin-bottom: 2.5rem;
   }
 
+  .container .box_desktop .box {
+    display: none;
+  }
+
   .container .content_portafolio {
     display: flex;
     margin: auto;
-    overflow: hidden;
-    margin-left: -52%;
+  }
+
+  .container .content_portafolio .box {
+    margin: auto;
+    max-width: 220px;
+    margin-left: 2.2rem;
   }
 
   .container .content_portafolio .flechas {

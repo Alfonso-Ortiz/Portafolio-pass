@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio-pass</title>
   </head>
@@ -152,8 +156,8 @@
       <!-- PORTAFOLIO -->
 
       <h2 id="portafolio" class="sub-title">PORTAFOLIO</h2>
-      <section  class="content_portafolio">
-        <img id="rowLeftP" class="flechas" src="./src/Íconos/arrow-left.svg" alt="">
+      
+      <div class="box_desktop">
 
         <div class="box">
           <img src="./src/Logos-Imágenes/image 9-1.png" alt="" />
@@ -174,8 +178,33 @@
           <img src="./src/Logos-Imágenes/image 11.png" alt="" />
           <p>Management web</p>
         </div>
+  </div>
+      <section  class="content_portafolio swiper">
+        <div class="swiper-wrapper">
 
-        <img id="rowRightP" class="flechas" src="./src/Íconos/arrow-right.svg" alt="">
+
+          <div class="box swiper-slide">
+              <img src="./src/Logos-Imágenes/image 9-1.png" alt="" />
+              <p>Beauty app</p>
+          </div>
+
+          <div class="box swiper-slide">
+              <img src="./src/Logos-Imágenes/image 10.png" alt="" />
+              <p>Training app</p>
+          </div>
+
+          <div class="box swiper-slide">
+              <img src="./src/Logos-Imágenes/Rectangle 58.png" alt="" />
+              <p>Management web</p>
+          </div>
+
+          <div class="box swiper-slide">
+              <img src="./src/Logos-Imágenes/image 11.png" alt="" />
+              <p>Management web</p>
+          </div>
+
+
+        </div>
       </section>
 
       <!-- CONTACTO -->
@@ -199,6 +228,32 @@
       <p>Hecho con &#9829 por Alfonso Ortiz</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+          loop: true,
+          slidesPerView: 3,
+          spaceBetween: 30,
+
+          breakpoints: {
+    // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          }
+        }
+      });
+    </script>
     <script src="./main.js"></script>
   </body>
 </html>
