@@ -53,37 +53,67 @@
 
       <!-- HABILIDADES -->
       <h2 id="content_habilidades" class="sub-title">HABILIDADES</h2>
-      <section  class="content_habilidades">
-        <img id="rowLeftH" class="flechas" src="./src/Íconos/arrow-left.svg" alt="">
-        
-        <div class="caja_habilidad">
-          <div>
-            <p>95%</p>
-          </div>
-          <h5>Mobile app desing</h5>
-        </div>
 
-        <div class="caja_habilidad">
-          <div>
-            <p>95%</p>
+      <section class="habilities_desktop">
+          <div class="caja_habilidad">
+            <div>
+              <p>95%</p>
+            </div>
+            <h5>Mobile app desing</h5>
           </div>
-          <h4>Web design</h4>
-        </div>
 
-        <div class="caja_habilidad">
-          <div>
-            <p>95%</p>
+          <div class="caja_habilidad">
+            <div>
+              <p>95%</p>
+            </div>
+            <h4>Web design</h4>
           </div>
-          <h4>HTML, CSS, JS</h4>
-        </div>
 
-        <div class="caja_habilidad">
-          <div>
-            <p>95%</p>
+          <div class="caja_habilidad">
+            <div>
+              <p>95%</p>
+            </div>
+            <h4>HTML, CSS, JS</h4>
           </div>
-          <h4>Desing systems</h4>
-        </div>
-        <img id="rowRightH" class="flechas" src="./src/Íconos/arrow-right.svg" alt="">
+
+          <div class="caja_habilidad">
+            <div>
+              <p>95%</p>
+            </div>
+            <h4>Desing systems</h4>
+          </div>
+      </section>
+
+      <section  class="content_habilidades swiperH">
+        <div class="swiper-wrapper">    
+            <div class="caja_habilidad swiper-slide">
+              <div>
+                <p>85%</p>
+              </div>
+              <h5>Mobile app desing</h5>
+            </div>
+
+            <div class="caja_habilidad swiper-slide">
+              <div>
+                <p>90%</p>
+              </div>
+              <h4>Web design</h4>
+            </div>
+
+            <div class="caja_habilidad swiper-slide">
+              <div>
+                <p>80%</p>
+              </div>
+              <h4>HTML, CSS, JS</h4>
+            </div>
+
+            <div class="caja_habilidad swiper-slide">
+              <div>
+                <p>70%</p>
+              </div>
+              <h4>Desing systems</h4>
+            </div>
+      </div> 
       </section>
 
       <!-- ACERCA DE MI -->
@@ -157,7 +187,7 @@
 
       <h2 id="portafolio" class="sub-title">PORTAFOLIO</h2>
       
-      <div class="box_desktop">
+      <section class="box_desktop">
 
         <div class="box">
           <img src="./src/Logos-Imágenes/image 9-1.png" alt="" />
@@ -178,7 +208,8 @@
           <img src="./src/Logos-Imágenes/image 11.png" alt="" />
           <p>Management web</p>
         </div>
-  </div>
+      </section>
+      
       <section  class="content_portafolio swiper">
         <div class="swiper-wrapper">
 
@@ -254,6 +285,32 @@
         }
       });
     </script>
+
+<script>
+  const swiper1 = new Swiper('.swiperH', {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+
+      breakpoints: {
+// when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      }
+    }
+  });
+</script>
     <script src="./main.js"></script>
   </body>
 </html>
