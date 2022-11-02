@@ -109,6 +109,11 @@ body::-webkit-scrollbar-thumb {
   margin-left: 2rem;
 }
 
+.container .content_main .me {
+  width: 500px;
+  margin-left: 1rem;
+}
+
 .container .content_main .main h3 {
   font-size: 50px;
   color: #ff4f6f;
@@ -568,6 +573,13 @@ footer p {
     padding-right: 5rem;
     position: absolute;
     left: 0%;
+  }
+
+  .container .content_main .me {
+    width: 250px;
+    margin-top: 10.5rem;
+    height: 433px;
+    margin-left: 5rem;
   }
 
   .container .content_main .main h3 {
