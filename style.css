@@ -468,8 +468,8 @@ footer p {
     height: 5rem;
     position: fixed;
     z-index: 1;
-    align-self: flex-end;
-    right: 30%;
+    right: 0;
+    margin-right: 29rem;
     width: 3rem;
     cursor: pointer;
     top: 0;
@@ -512,11 +512,14 @@ footer p {
     max-width: 500;
   }
 
+  .container {
+    margin: 0 auto;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    margin: 0 auto;
   }
 
   .container .content_header {
