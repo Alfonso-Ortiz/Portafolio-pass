@@ -508,7 +508,7 @@ footer p {
     font-size: 16px;
     margin: 0 auto;
     padding: 0;
-    max-width: 600;
+    max-width: 500;
   }
 
   .content {
@@ -601,6 +601,13 @@ footer p {
 
   .container .content_habilidades .caja_habilidad {
     display: block;
+    margin-left: 0.1rem;
+  }
+
+  .container .content_habilidades {
+    max-width: 400px;
+    margin-left: 3.2rem;
+    overflow: hidden;
   }
 
   /* .container .content_habilidades .flechas {
@@ -662,20 +669,7 @@ footer p {
   .container .content_portafolio .box {
     margin: auto;
     max-width: 220px;
-    margin-left: 2.2rem;
-  }
-
-  .container .content_portafolio .flechas {
-    display: flex;
-    color: white;
-    background-color: #ff4f6f;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: absolute;
-    cursor: pointer;
-    align-self: center;
-    right: 2%;
+    margin-left: 1.6rem;
   }
 
   .container .content_contacto {
@@ -685,102 +679,3 @@ footer p {
     align-items: center;
   }
 }
-
-/* @media screen and (max-width: 800px) {
-  .redes {
-    display: none;
-  }
-  nav {
-    display: none;
-  }
-  nav.resposive {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    padding: 10px 0;
-  }
-
-  nav.responsive ul {
-    display: block !important;
-    text-align: center;
-  }
-  nav.responsive ul li {
-    margin: 5px 0;
-  }
-
-  .icon-nav {
-    display: block;
-  }
-
-  .home .contenido .presentation h2 {
-    font-size: 48px;
-  }
-
-  .aboutme {
-    padding: 50px 0;
-    display: block;
-  }
-
-  .aboutme .content-photo {
-    max-width: 200px;
-    margin: auto;
-  }
-
-  .aboutme .content-photo img {
-    padding: 8px;
-  }
-
-  .aboutme .about-me .title-about-me {
-    text-align: center;
-  }
-
-  .aboutme .about-me h2 {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  .services {
-    padding: 50px 15px;
-  }
-
-  .services .fila {
-    display: block;
-  }
-
-  .services .fila .service {
-    margin: 10px auto;
-  }
-
-  .content-skills {
-    padding: 50px 20px;
-  }
-
-  .portfolio {
-    padding: 50px 0;
-  }
-
-  .portfolio .fila-portfolio {
-    display: block;
-  }
-
-  .portfolio .fila-portfolio .proyect {
-    margin: 10px auto;
-  }
-
-  .contact {
-    padding: 50px 15px;
-  }
-
-  .contact .content-form .mitad {
-    margin: 15px;
-    display: block;
-  }
-
-  .contact .content-form .mitad input {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-} */
