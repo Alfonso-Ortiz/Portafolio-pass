@@ -473,8 +473,7 @@ footer p {
     height: 5rem;
     position: fixed;
     z-index: 1;
-    right: 0;
-    margin-right: 29rem;
+    right: 50%;
     width: 3rem;
     cursor: pointer;
     top: 0;
@@ -579,7 +578,7 @@ footer p {
     width: 250px;
     margin-top: 10.5rem;
     height: 433px;
-    margin-left: 5rem;
+    margin-left: 12rem;
   }
 
   .container .content_main .main h3 {
