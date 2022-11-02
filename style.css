@@ -468,7 +468,8 @@ footer p {
     height: 5rem;
     position: fixed;
     z-index: 1;
-    right: 0;
+    align-self: flex-end;
+    right: 30%;
     width: 3rem;
     cursor: pointer;
     top: 0;
