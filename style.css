@@ -465,7 +465,7 @@ footer p {
     height: 5rem;
     position: fixed;
     z-index: 1;
-    right: 45%;
+    right: 15%;
     width: 3rem;
     cursor: pointer;
     top: 0;
@@ -505,7 +505,6 @@ footer p {
     font-size: 16px;
     margin: 0 auto;
     padding: 0;
-    max-width: 500;
   }
 
   .container {
@@ -521,7 +520,6 @@ footer p {
   .container .content_header {
     height: 50px;
     padding: 0 1rem;
-    width: 100vh;
     left: 0%;
     top: 0%;
     display: flex;
