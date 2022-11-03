@@ -110,8 +110,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container .content_main .me {
-  width: 500px;
-  margin-left: 1rem;
+  width: 430px;
+  margin-left: 4.4rem;
 }
 
 .container .content_main .main h3 {
@@ -127,20 +127,12 @@ body::-webkit-scrollbar-thumb {
 
 .container .content_main .main .icons {
   display: flex;
-  gap: 2rem;
-  color: #34b0be;
+  gap: 3rem;
   margin-bottom: 30px;
 }
 
-.container .content_main .main .icons a {
-  background-color: #ffffff;
-  padding: 0;
-  width: 30px;
-  border-radius: 90%;
-  border-color: #111414;
-}
 .container .content_main .main .icons a img {
-  height: 24px;
+  height: 30px;
 }
 
 .container .content_main .main button {
@@ -575,10 +567,10 @@ footer p {
   }
 
   .container .content_main .me {
-    width: 250px;
+    width: 230px;
     margin-top: 10.5rem;
     height: 433px;
-    margin-left: 12rem;
+    margin-left: 8.6rem;
   }
 
   .container .content_main .main h3 {
